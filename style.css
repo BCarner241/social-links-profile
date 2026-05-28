@@ -16,8 +16,15 @@
     font-weight: 700;
 }
 
+:root {
+    --green: hsl(75, 94%, 57%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
 .attribution {
-    font-size: 0.6875rem;
+    font-size: 0.6875em;
     text-align: center;
 }
 
@@ -32,7 +39,7 @@
 }
 
 body {
-    background-color: hsl(0, 0%, 8%);
+    background-color: var(--grey-900);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -40,42 +47,43 @@ body {
     justify-content: center;
     font-family: Inter;
     color: white;
+    font-size: 1em;
 }
 
 main {
-    background-color: hsl(0, 0%, 12%);
-    width: 400px;
+    background-color: var(--grey-800);
+    width: 25em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    padding: 2.5em;
+    border-radius: 0.625em;
+    margin-bottom: 1.25em;
 }
 
 main .pfp {
     border-radius: 50%;
-    max-width: 100px;
-    margin-bottom: 30px;
+    max-width: 6.25em;
+    margin-bottom: 1.875em;
 }
 
 main .name {
     font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 1.5em;
+    margin-bottom: 0.416em;
 }
 
 main .location {
-    color: hsl(75, 94%, 57%);
+    color: var(--green);
     font-weight: 400;
-    font-size: 14px;
-    margin-bottom: 30px;
+    font-size: 0.875em;
+    margin-bottom: 2.142em;
 }
 
 main .bio {
     font-weight: 400;
-    font-size: 14px;
-    margin-bottom: 30px;
+    font-size: 0.875em;
+    margin-bottom: 2.142em;
 }
 
 main .socials {
@@ -83,20 +91,20 @@ main .socials {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 15px;
+    gap: 0.9375em;
 }
 
 main .socials p {
     text-align: center;
-    padding: 15px;
+    padding: 1.071em;
     font-weight: 700;
-    font-size: 14px;
-    background-color: hsl(0, 0%, 20%);
-    border-radius: 10px;
+    font-size: 0.875em;
+    background-color: var(--grey-700);
+    border-radius: 0.714em;
 }
 
 main .socials p:hover {
-    color: hsl(0, 0%, 12%);
-    background-color: hsl(75, 94%, 57%);
+    color: var(--grey-800);
+    background-color: var(--green);
     cursor: pointer;
 }
