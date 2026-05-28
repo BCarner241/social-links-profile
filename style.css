@@ -83,7 +83,7 @@ main .socials {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 10px;
+    gap: 15px;
 }
 
 main .socials p {
@@ -91,4 +91,12 @@ main .socials p {
     padding: 15px;
     font-weight: 700;
     font-size: 14px;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 10px;
+}
+
+main .socials p:hover {
+    color: hsl(0, 0%, 12%);
+    background-color: hsl(75, 94%, 57%);
+    cursor: pointer;
 }
